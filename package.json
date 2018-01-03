@@ -4,7 +4,8 @@
   "description": "A tiny library for generating blocky identicons.",
   "main": "./dist/blockies.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":
+      "rollup ./src/blockies.js --output.format umd --name 'blockies' --output.file ./dist/blockies.js -w",
     "build":
       "rollup ./src/blockies.js --output.format umd --name 'blockies' --output.file ./dist/blockies.js"
   },
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/alexvandesande/blockies/issues"
   },
-  "homepage": "https://github.com/alexvandesande/blockies#readme"
+  "homepage": "https://github.com/alexvandesande/blockies#readme",
+  "devDependencies": {
+    "rollup": "^0.53.3"
+  }
 }
