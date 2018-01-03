@@ -73,8 +73,8 @@ function buildOpts(opts) {
 
   return Object.assign(
     {
-      size: 1,
-      scale: 2,
+      size: 8,
+      scale: 16,
       color: createColor(),
       bgcolor: createColor(),
       spotcolor: createColor()
